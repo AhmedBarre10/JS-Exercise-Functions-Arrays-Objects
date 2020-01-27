@@ -15,7 +15,7 @@
 function addNumbers(num1, num2) {
   return num1 + num2;
 }
-
+console.log(addNumbers(2,3))
 // ⭐️ Example Challenge end ⭐️
 
 
@@ -39,9 +39,15 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
-}
+function makePersonObject(id, name, email) {
+  return { 
+     id:2,
+     name:"Ahmed",
+      email:"ahmedbarre600@gmail.com" };
+};
+
+console.log(makePersonObject());
+
 
 /**
  * ### Challenge `getName`
@@ -56,10 +62,16 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
-}
 
+
+function getName (Ahmed) {
+  const person ={ 
+    id:2,
+    name:"Ahmed",
+     email:"ahmedbarre600@gmail.com" };
+  return `Hello, my name is`+ person.name
+};
+console.log (getName())
 /**
  * ### Challenge `makeSmartPerson`
  * 
@@ -73,9 +85,19 @@ function getName(/* code here */) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
+function makeSmartPerson(names) {
   /* code here */
+  let name = "Ahmed"
+   let sums = function sums(num1,num2){
+    return num1 + num2
+     
+  };
+  console.log(sums(5,2))
+  
+  return "hello  ny name is" +name
+  
 }
+console.log (makeSmartPerson());
 
 
 
@@ -83,6 +105,7 @@ function makeSmartPerson(/* code here */) {
 
 /*
 // ⭐️ Example Test Data ⭐️
+
 
 var inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
@@ -137,8 +160,10 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
-}
+  
 
+}
+console.log(getCarInfoByIndex[1])
 /**
  * ### Challenge `getLastCarInfo`
  * 
@@ -244,9 +269,13 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a, b) => a + b;// code here!
+console.log(sum(2,9));
+const addFive = (num) => num + 5;
+console.log(addFive(10)); // code here!
+
+const argTimesTwo = (arg) => arg*2;
+console.log(argTimesTwo(10))// code here!
 
 /**
  * ### Challenge `carMaker`
